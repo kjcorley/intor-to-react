@@ -26,6 +26,7 @@
               <h2>Current program: {this.props.label}</h2>
               <h3>Current week: {this.state.number}</h3>
               <p>Current date: {this.props.date.toLocaleDateString()}</p>
+              <h3>Current module: {this.props.module}</h3>
             </div>
           );
         }
@@ -37,7 +38,8 @@
       }
 
       Counter.defaultProps = {
-        label: "Web Developer Track"
+        label: "Web Developer Track",
+        module: "WDT Frontend Frameworks"
       }
 
       ReactDOM.render(
